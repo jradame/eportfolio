@@ -64,6 +64,9 @@ section:nth-child(even) {
   margin-bottom: 20px;
 }
 
+.section__title.text-red {
+  color: red;
+}
 /*NAVIGATION BAR*/
 
 nav {
@@ -171,7 +174,7 @@ nav {
 
 /* TECH STACK SECTION*/
 
-.language__img {
+.language:hover .language__img {
   width: 100%;
   max-width: 100px;
   transition: all 300ms ease;
@@ -208,4 +211,10 @@ nav {
 .language__name {
   position: absolute;
   bottom: 0;
+  transform: scale(0);
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  transition: all 300ms ease;
 }
